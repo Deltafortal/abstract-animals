@@ -4,6 +4,8 @@ import org.lessons.animals.pojo.Aquila;
 import org.lessons.animals.pojo.Cane;
 import org.lessons.animals.pojo.Delfino;
 import org.lessons.animals.pojo.Passerotto;
+import org.lessons.animals.pojo.inter.INuotante;
+import org.lessons.animals.pojo.inter.IVolante;
 
 public class Main {
 
@@ -26,23 +28,36 @@ public class Main {
         passerotto.verso();
         passerotto.mangia();
         passerotto.dormi();
-        passerotto.faiVolare();
+        System.out.println(faiVolare(passerotto));
 
         System.out.println("\nAquila:");
         aquila.verso();
         aquila.mangia();
         aquila.dormi();
-        aquila.faiVolare();
+        System.out.println(faiVolare(aquila));
 
         System.out.println("\nDelfino:");
         delfino.verso();
         delfino.mangia();
         delfino.dormi();
-        delfino.faiNuotare();
+        System.out.println(faiNuotare(delfino));
         
         
         
         
+	}
+	
+	public static String faiVolare(IVolante animale) {
+		
+		return animale + "sta volando";
+		
+	}
+	
+	
+	public static String faiNuotare(INuotante animale) {
+			
+		return animale + "sta nuotando";
+			
 	}
 	
 }

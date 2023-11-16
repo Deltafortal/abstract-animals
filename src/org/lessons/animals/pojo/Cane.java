@@ -16,4 +16,14 @@ public class Cane extends Animale{
 		
 	}
 
+	
+	
+	
+	
+	//TO String
+		@Override
+		public String toString() {
+			
+			return "Il cane ";
+		}
 }
